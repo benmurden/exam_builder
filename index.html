@@ -21,7 +21,7 @@ button{font:600 .95rem system-ui,sans-serif;border-radius:8px;border:1px solid v
 button.ghost{background:transparent;color:var(--accent)}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
 .err{color:var(--bad);font:.9rem system-ui,sans-serif;margin-top:10px;white-space:pre-wrap}
-.q{margin:0}
+.q{margin:0 0 14px}
 .q h3{font-size:1.05rem;margin:0 0 10px;white-space:pre-line;font-weight:600}
 .q .n{font-family:system-ui,sans-serif;color:var(--muted);font-size:.8rem;display:block;margin-bottom:2px}
 label.opt{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);border-radius:8px;margin:6px 0;cursor:pointer}
@@ -38,7 +38,11 @@ details summary{cursor:pointer;font-family:system-ui,sans-serif;color:var(--acce
 pre{overflow-x:auto;font-size:12px;background:var(--bg);padding:10px;border-radius:8px}
 .passage{border-left:4px solid var(--accent)}
 .ptext{white-space:pre-line}
+.pgroup{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 18px;align-items:start;width:min(1180px,calc(100vw - 32px));position:relative;left:50%;transform:translateX(-50%)}
+.pgroup>.passage{position:sticky;top:calc(env(safe-area-inset-top,0px) + 64px);max-height:calc(100vh - 90px);overflow:auto;margin:0 0 14px}
+@media (max-width:820px){.pgroup{grid-template-columns:minmax(0,1fr);width:100%;left:0;transform:none}.pgroup>.passage{position:static;max-height:none}}
 .hide{display:none}
+select{font:600 .95rem system-ui,sans-serif;padding:10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--text);max-width:100%}
 </style>
 </head>
 <body>
@@ -48,11 +52,14 @@ pre{overflow-x:auto;font-size:12px;background:var(--bg);padding:10px;border-radi
   <h1>Exam Builder</h1>
   <p class="sub">Paste a JSON config, load it, and take the exam. Your last config is remembered in this browser.</p>
   <div class="card">
+    <div class="row">
+      <select id="tpl" aria-label="Template"></select>
+      <button class="ghost" id="sample">Load template</button>
+    </div>
     <textarea id="json" spellcheck="false" aria-label="Exam JSON"></textarea>
     <div class="err" id="err"></div>
     <div class="row">
       <button id="start">Start exam</button>
-      <button class="ghost" id="sample">Reset to sample</button>
       <button class="ghost" id="file">Load .json file…</button>
       <input type="file" id="fileIn" accept=".json,application/json" class="hide">
     </div>
@@ -130,6 +137,44 @@ const SAMPLE = {
     {passage: "email1", question: "What does Lisa want Jenny to do by Thursday?", options: ["Call her if she can come.", "Bring sandwiches to the park.", "Buy a new hat.", "Study math with her."], answer: 0, explanation: "The email says to call Lisa by Thursday if Jenny can come. Jenny should bring a hat, not buy a new one."}
   ]
 };
+const SAMPLE2 = {
+  title: "Eiken Grade 3 Full Mock Test",
+  description: "A 20-question mock test: vocabulary, grammar, conversation, and two reading sections. Answer choices are shuffled each time.",
+  timeLimitMinutes: 25,
+  passingScore: 60,
+  shuffleQuestions: false,
+  shuffleOptions: true,
+  passages: [
+    {id: "notice", title: "Reading 1: Notice", text: "Spring Music Festival\nDate: Sunday, April 14\nPlace: Midori Park\nTime: 11:00 a.m. to 4:00 p.m.\n\nCome and enjoy music from five school bands! Tickets are 500 yen for adults. Children under twelve can enter for free. You can buy lunch from food stands in the park. If it rains, the festival will be held in Midori City Hall."},
+    {id: "grandpa", title: "Reading 2: A Surprise for Grandpa", text: "Mai’s grandfather lives in a small town far from her house. Every summer, she visits him and they go fishing together. This year, Mai’s grandfather turned seventy, so she wanted to give him a present. She asked her mother for ideas. Her mother said, “He loves fishing, so how about a new hat?” Mai saved her allowance for two months and bought a blue fishing hat. When she gave it to him, her grandfather smiled and put it on right away. He said, “This is the best birthday present ever. Let’s go fishing tomorrow!”"}
+  ],
+  questions: [
+    {question: "My father works at a (    ). He is a doctor.", options: ["hospital", "bakery", "station", "library"], answer: 0, explanation: "Doctors work at a hospital."},
+    {question: "The movie was so (    ) that everyone in the theater laughed.", options: ["funny", "heavy", "cold", "thin"], answer: 0, explanation: "People laugh at something funny."},
+    {question: "Please (    ) the window. It’s very hot in here.", options: ["open", "close", "wash", "break"], answer: 0, explanation: "Opening the window lets in cool air."},
+    {question: "I want to (    ) a new bike. It costs 20,000 yen.", options: ["buy", "sell", "wear", "teach"], answer: 0, explanation: "You buy something that costs money."},
+    {question: "We went to the (    ) and saw lions and elephants.", options: ["zoo", "bank", "museum", "airport"], answer: 0, explanation: "Lions and elephants are seen at a zoo."},
+    {question: "My sister (    ) breakfast every morning at seven.", options: ["eats", "eat", "eating", "ate"], answer: 0, explanation: "“Every morning” is a habit, and “my sister” is third person singular, so use “eats”."},
+    {question: "Yesterday, we (    ) to the beach by train.", options: ["went", "go", "goes", "going"], answer: 0, explanation: "“Yesterday” needs the past tense of “go”: went."},
+    {question: "Mt. Fuji is (    ) mountain in Japan.", options: ["the highest", "higher", "high", "more high"], answer: 0, explanation: "Use the superlative “the highest” when comparing one thing to all others."},
+    {question: "I (    ) a letter when my mother came home.", options: ["was writing", "write", "am writing", "writes"], answer: 0, explanation: "The past continuous describes an action in progress at a past moment."},
+    {question: "She wants (    ) a doctor in the future.", options: ["to be", "be", "being", "is"], answer: 0, explanation: "“Want” is followed by “to” + verb."},
+    {question: "A: How about going to the movies tomorrow?\nB: (    )", options: ["Sounds good. What time?", "You’re welcome.", "I’m sorry I’m late.", "Yes, I do."], answer: 0, explanation: "This accepts the invitation and asks for details."},
+    {question: "A: Hello. This is Mike. May I speak to Ann?\nB: (    )", options: ["Sure. Hold on, please.", "Here you are.", "I’m fine, thank you.", "It’s on the desk."], answer: 0, explanation: "A natural reply on the telephone."},
+    {question: "A: Is this your first time to visit Japan?\nB: (    )", options: ["No, I came here two years ago.", "Yes, I like Japanese food.", "I will visit Kyoto.", "It’s very big."], answer: 0, explanation: "It directly answers the yes/no question and adds detail."},
+    {question: "A: Dad, can I use your computer?\nB: (    )", options: ["Sure, but finish before dinner.", "No, I’m a teacher.", "It was expensive.", "You’re very kind."], answer: 0, explanation: "It gives permission with a condition."},
+    {passage: "notice", question: "How much is a ticket for a ten-year-old child?", options: ["It is free.", "300 yen.", "500 yen.", "1,000 yen."], answer: 0, explanation: "Children under twelve can enter for free."},
+    {passage: "notice", question: "Where will the festival be held if it rains?", options: ["At Midori City Hall.", "At Midori Park.", "At a school.", "At a music shop."], answer: 0, explanation: "The notice says it will move to Midori City Hall."},
+    {passage: "notice", question: "What can people do at the festival?", options: ["Listen to school bands and buy lunch.", "Play in a band for free.", "Cook lunch in the park.", "Buy new instruments."], answer: 0, explanation: "There is music from school bands and food stands for lunch."},
+    {passage: "grandpa", question: "How old did Mai’s grandfather become this year?", options: ["Seventy.", "Sixty.", "Eighty.", "Fifty."], answer: 0, explanation: "He turned seventy."},
+    {passage: "grandpa", question: "How did Mai get the money for the present?", options: ["She saved her allowance.", "Her mother gave it to her.", "She sold her old hat.", "She worked at a shop."], answer: 0, explanation: "Mai saved her allowance for two months."},
+    {passage: "grandpa", question: "What will Mai and her grandfather do tomorrow?", options: ["Go fishing.", "Buy a new hat.", "Visit her mother.", "Make dinner."], answer: 0, explanation: "Her grandfather says, “Let’s go fishing tomorrow!”"}
+  ]
+};
+const TEMPLATES = [
+  ["Eiken Grade 3 – Practice Test (14 questions)", SAMPLE],
+  ["Eiken Grade 3 – Full Mock Test (20 questions)", SAMPLE2]
+];
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -197,14 +242,18 @@ function pass(it, qi, rev) {
   const p = (exam.passages || []).find(x => x.id === it.passage);
   if (!p) return "";
   const body = (p.title ? `<h2>${esc(p.title)}</h2>` : "") + `<div class="ptext">${esc(p.text)}</div>`;
-  return rev ? `<details class="card passage"><summary>${esc(p.title || p.id)}</summary>${body}</details>` : `<div class="card passage">${body}</div>`;
+  return '<div class="pgroup"><div class="card passage">' + body + '</div><div class="pqs">';
+}
+
+function pend(it, qi) {
+  return it.passage && !(qi + 1 < items.length && items[qi + 1].passage === it.passage) ? "</div></div>" : "";
 }
 
 function renderExam() {
   $("etitle").textContent = exam.title;
   $("edesc").textContent = exam.description || "";
   $("qs").innerHTML = items.map((it, qi) => pass(it, qi) + `<div class="card q"><h3><span class="n">Question ${qi + 1} of ${items.length}${it.multi ? " · select all that apply" : ""}</span>${esc(it.q)}</h3>${
-    it.order.map(oi => `<label class="opt"><input type="${it.multi ? "checkbox" : "radio"}" name="q${qi}" data-q="${qi}" data-o="${oi}"><span>${esc(it.opts[oi])}</span></label>`).join("")}</div>`).join("");
+    it.order.map(oi => `<label class="opt"><input type="${it.multi ? "checkbox" : "radio"}" name="q${qi}" data-q="${qi}" data-o="${oi}"><span>${esc(it.opts[oi])}</span></label>`).join("")}</div>` + pend(it, qi)).join("");
   progress();
 }
 
@@ -233,7 +282,7 @@ function finish() {
   $("verdict").textContent = v;
   $("review").innerHTML = exam.showAnswersAtEnd === false ? "" : items.map((it, qi) => pass(it, qi, true) + `<div class="card q"><h3><span class="n">Question ${qi + 1} · ${it.ok ? "Correct" : (it.sel.size ? "Incorrect" : "Unanswered")}</span>${esc(it.q)}</h3>${
     it.order.map(oi => { const c = it.correct.has(oi), s = it.sel.has(oi);
-      return `<label class="opt ${c ? "ok" : s ? "bad" : ""}"><span>${c ? "✓" : s ? "✗" : "•"}</span><span>${esc(it.opts[oi])}${s ? " <em class=\"muted\">(your answer)</em>" : ""}</span></label>`; }).join("")}${it.exp ? `<div class="exp">${esc(it.exp)}</div>` : ""}</div>`).join("");
+      return `<label class="opt ${c ? "ok" : s ? "bad" : ""}"><span>${c ? "✓" : s ? "✗" : "•"}</span><span>${esc(it.opts[oi])}${s ? " <em class=\"muted\">(your answer)</em>" : ""}</span></label>`; }).join("")}${it.exp ? `<div class="exp">${esc(it.exp)}</div>` : ""}</div>` + pend(it, qi)).join("");
   show("result");
 }
 
@@ -244,7 +293,8 @@ $("submit").onclick = () => {
   if (!un || confirm(un + " question(s) unanswered. Submit anyway?")) finish();
 };
 $("quit").onclick = $("edit").onclick = () => { clearInterval(timerId); show("setup"); };
-$("sample").onclick = () => { $("json").value = JSON.stringify(SAMPLE, null, 2); $("err").textContent = ""; };
+TEMPLATES.forEach(([n], i) => $("tpl").add(new Option(n, i)));
+$("sample").onclick = () => { $("json").value = JSON.stringify(TEMPLATES[$("tpl").value][1], null, 2); $("err").textContent = ""; };
 $("file").onclick = () => $("fileIn").click();
 $("fileIn").onchange = e => { const f = e.target.files[0]; if (f) f.text().then(t => { $("json").value = t; }); };
 </script>

@@ -294,7 +294,31 @@ $("submit").onclick = () => {
 };
 $("quit").onclick = $("edit").onclick = () => { clearInterval(timerId); show("setup"); };
 TEMPLATES.forEach(([n], i) => $("tpl").add(new Option(n, i)));
-$("sample").onclick = () => { $("json").value = JSON.stringify(TEMPLATES[$("tpl").value][1], null, 2); $("err").textContent = ""; };
+$("sample").onclick = async () => {
+  const t = TEMPLATES[$("tpl").value];
+  try {
+    let data = t[1];
+    if (!data) {
+      const r = await fetch(encodeURIComponent(t[2]), {cache: "no-cache"});
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      data = await r.json();
+    }
+    $("json").value = JSON.stringify(data, null, 2);
+    $("err").textContent = "";
+  } catch (e) { $("err").textContent = "Could not load " + t[2] + ": " + e.message; }
+};
+// Optional: templates.json next to this page lists exam files in the same folder,
+// e.g. ["unit1.json", {"name": "Midterm", "file": "midterm.json"}]
+fetch("templates.json", {cache: "no-cache"}).then(r => r.ok ? r.json() : []).then(list => {
+  if (!Array.isArray(list)) return;
+  list.forEach(e => {
+    const file = typeof e === "string" ? e : e && e.file;
+    if (typeof file !== "string" || !/^[^\/\\:?#]+\.json$/i.test(file) || file.toLowerCase() === "templates.json") return;
+    const name = (e && e.name) || file.replace(/\.json$/i, "");
+    TEMPLATES.push([name, null, file]);
+    $("tpl").add(new Option("\ud83d\udcc4 " + name, TEMPLATES.length - 1));
+  });
+}).catch(() => {});
 $("file").onclick = () => $("fileIn").click();
 $("fileIn").onchange = e => { const f = e.target.files[0]; if (f) f.text().then(t => { $("json").value = t; }); };
 </script>

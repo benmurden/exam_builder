@@ -1,0 +1,407 @@
+{
+  "title": "IPC 1 Entrance Examination Sample – Section A (Reading)",
+  "description": "AY2027 sample reading section. Read each text and choose the best answer (A–D). 40 questions across three texts. (Section B: Writing is not included because it is not multiple choice.)",
+  "timeLimitMinutes": 60,
+  "shuffleQuestions": false,
+  "shuffleOptions": false,
+  "showAnswersAtEnd": true,
+  "passages": [
+    {
+      "id": "p1",
+      "title": "Text 1: Into the Deep",
+      "text": "The deep sea is one of the least explored places on Earth. More than ninety percent of the ocean floor has never been seen by humans, and scientists believe many species remain undiscovered in the darkness below.\n\nOne of the strangest creatures in the deep sea is the anglerfish. The female anglerfish has a small glowing organ that hangs in front of her head like a fishing rod. This light attracts smaller fish in the dark water, and when they swim close enough, the anglerfish snaps them up with its enormous jaws.\n\nPressure in the deep ocean is extreme. At great depths, the water pushes down with a force far greater than at the surface. Despite this, many animals thrive there, including giant squid and certain species of shark.\n\nScientists use special underwater vehicles called submersibles to explore these depths. Each mission provides new data and often leads to the discovery of previously unknown creatures.\n\nAdapted from “The Deep Ocean” — BBC Earth / BBC Future"
+    },
+    {
+      "id": "p2",
+      "title": "Text 2: News at the Speed of Light",
+      "text": "For most of human history, news spread slowly. A battle in one country might take weeks or months to be known elsewhere. Information moved at the speed of horses, ships, and messengers. Today, a single event can reach billions of people within seconds.\n\nThe rise of social media has changed how we receive information. Platforms like Instagram and YouTube allow anyone with internet access to share content instantly. This spread of information to ordinary people is positive in many ways. People can report events as they happen, without relying on traditional editors or broadcasters.\n\nHowever, speed does not always mean accuracy. False stories often spread faster than true ones because they are more emotional and surprising. A 2018 study from MIT found that false news reached people six times faster than accurate reports. People often share shocking headlines without checking if they are true.\n\nBecause of this, media literacy has become an essential skill. Schools in some countries now teach students how to evaluate sources and question information. It is not enough to receive information quickly; people must also learn how to think about it carefully.\n\nAdapted from \"The Spread of False News Online\" — MIT Media Lab & The Guardian"
+    },
+    {
+      "id": "p3",
+      "title": "Text 3: What the Stones Remember",
+      "text": "There is a particular kind of silence that belongs only to very old places. I first encountered it in the ruins of a stone monastery in the mountains, where the walls, though roofless, still held their shape after seven centuries. Standing among them, I noticed that the noise of the world — traffic, wind, the ordinary hum of being alive — seemed to fall away. What remained was something harder to name.\n\nWe tend to think of silence as an absence, a mere emptiness where sound has been removed. But this silence felt different. It had weight. It suggested that something had once happened here, and that the stones, patient and indifferent, had simply continued to exist long after the people were gone. I found myself thinking about what it means to leave something behind — whether a building, a book, or even a habit of kindness passed from one person to another.\n\nPhilosophers have often asked what gives a human life its meaning. Many answers have been offered: love, achievement, contribution to something larger than oneself. What struck me in that old place was a quieter possibility — that meaning might not need to be proclaimed or recorded at all. Perhaps it is enough simply to have been present, to have shaped a small corner of the world, and to leave it subtly different from how you found it.\n\nThe monastery had no sign explaining its history. Whatever was remembered there was remembered in stone.\n\nAdapted from \"Places of Silence\" — an essay in the tradition of The Atlantic / Aeon Magazine"
+    }
+  ],
+  "questions": [
+    {
+      "question": "According to paragraph one, how much of the ocean floor has been seen by humans?",
+      "options": ["Less than ten percent", "About half", "More than seventy percent", "Almost all"],
+      "answer": 0,
+      "passage": "p1",
+      "explanation": "More than ninety percent has never been seen, so less than ten percent has been seen."
+    },
+    {
+      "question": "Which animal is described in detail in the passage?",
+      "options": ["Giant squid", "Sea cucumber", "Anglerfish", "Shark"],
+      "answer": 2,
+      "passage": "p1",
+      "explanation": "Paragraph two describes the anglerfish and how it hunts."
+    },
+    {
+      "question": "What do scientists use to explore the deep ocean?",
+      "options": ["Satellites", "Submersibles", "Scuba equipment", "Fishing boats"],
+      "answer": 1,
+      "passage": "p1",
+      "explanation": "Paragraph four names special underwater vehicles called submersibles."
+    },
+    {
+      "question": "“Attracts” (paragraph two) most nearly means:",
+      "options": ["scares", "draws toward", "pushes away", "hides"],
+      "answer": 1,
+      "passage": "p1",
+      "explanation": "The light brings smaller fish close, so “attracts” means draws toward."
+    },
+    {
+      "question": "“Thrive” (paragraph three) most nearly means:",
+      "options": ["live and grow successfully", "disappear slowly", "struggle to survive", "move quickly"],
+      "answer": 0,
+      "passage": "p1",
+      "explanation": "“Despite this” signals that animals do well in spite of the pressure."
+    },
+    {
+      "question": "In the sentence “when they swim close enough, the anglerfish snaps them up,” “they” refers to:",
+      "options": ["anglerfish", "the glowing organ", "smaller fish", "scientists"],
+      "answer": 2,
+      "passage": "p1",
+      "explanation": "The light attracts smaller fish, and it is those fish that swim close."
+    },
+    {
+      "question": "In the sentence “many animals thrive there,” “there” refers to:",
+      "options": ["the ocean surface", "outer space", "inside a vehicle", "the deep ocean"],
+      "answer": 3,
+      "passage": "p1",
+      "explanation": "The paragraph is about extreme pressure in the deep ocean."
+    },
+    {
+      "question": "Why does the anglerfish use a glowing organ?",
+      "options": ["To help it see clearly", "To communicate with other fish", "To attract prey in the dark", "To protect itself from pressure"],
+      "answer": 2,
+      "passage": "p1",
+      "explanation": "The light attracts smaller fish, which the anglerfish then catches."
+    },
+    {
+      "question": "What can be inferred about deep-sea exploration missions?",
+      "options": ["They are usually unsuccessful", "They often lead to new discoveries", "They are simple to carry out", "They focus only on known animals"],
+      "answer": 1,
+      "passage": "p1",
+      "explanation": "Each mission provides new data and often leads to discoveries of unknown creatures."
+    },
+    {
+      "question": "What is the main purpose of this passage?",
+      "options": ["To warn about dangers in the ocean", "To tell a fictional story about sea creatures", "To explain how to become a scientist", "To inform readers about the deep sea"],
+      "answer": 3,
+      "passage": "p1",
+      "explanation": "The passage presents factual information about the deep sea."
+    },
+    {
+      "question": "Which of the following best states the main idea of the passage?",
+      "options": [
+        "The deep sea is a harsh but active environment with much still unknown",
+        "Anglerfish are the most dangerous creatures in the ocean",
+        "The ocean floor has already been mostly explored",
+        "Deep-sea pressure prevents most life"
+      ],
+      "answer": 0,
+      "passage": "p1",
+      "explanation": "The passage covers extreme conditions, life that thrives there, and how much remains unexplored."
+    },
+    {
+      "question": "According to the passage, all are TRUE EXCEPT:",
+      "options": [
+        "Many deep-sea species have not yet been discovered",
+        "Some animals are able to live in extreme pressure",
+        "The deep sea has lower pressure than the surface",
+        "Scientists use special vehicles to explore deep areas"
+      ],
+      "answer": 2,
+      "passage": "p1",
+      "explanation": "Pressure at depth is far greater than at the surface, so option C is false."
+    },
+    {
+      "question": "Which of the following is the best summary of the passage?",
+      "options": [
+        "Scientists have explored most of the ocean and found only a few unusual creatures",
+        "The deep sea is an extreme environment where most animals cannot survive",
+        "The deep sea remains largely unexplored, and scientists continue to discover new life there",
+        "Underwater machines are mainly used to study common ocean animals"
+      ],
+      "answer": 2,
+      "passage": "p1",
+      "explanation": "This captures both the unexplored nature of the deep sea and ongoing discovery."
+    },
+    {
+      "question": "According to paragraph one, how long could news take to travel in the past?",
+      "options": ["A few hours", "A few days", "Weeks or months", "Several years"],
+      "answer": 2,
+      "passage": "p2",
+      "explanation": "A battle might take weeks or months to be known elsewhere."
+    },
+    {
+      "question": "What did the 2018 MIT study find?",
+      "options": [
+        "True news spreads faster than false news",
+        "False news reaches people much faster than true news",
+        "Social media is always reliable",
+        "Editors are no longer needed"
+      ],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "False news reached people six times faster than accurate reports."
+    },
+    {
+      "question": "“This” in “This spread of information to ordinary people…” refers to:",
+      "options": ["traditional media", "social media platforms", "fast internet speed", "government control"],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "The preceding sentences describe social media platforms letting anyone share content."
+    },
+    {
+      "question": "“Accuracy” (paragraph three) most nearly means:",
+      "options": ["speed", "correctness", "popularity", "importance"],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "“Speed does not always mean accuracy” contrasts speed with being correct."
+    },
+    {
+      "question": "“Surprising” (paragraph three) most nearly means:",
+      "options": ["unexpected", "predictable", "boring", "slow"],
+      "answer": 0,
+      "passage": "p2",
+      "explanation": "Surprising things are unexpected."
+    },
+    {
+      "question": "In “think about it carefully,” “it” refers to:",
+      "options": ["the curriculum", "media literacy", "the school system", "the information"],
+      "answer": 3,
+      "passage": "p2",
+      "explanation": "The sentence is about receiving information and learning to think about that information."
+    },
+    {
+      "question": "Why do false stories often spread faster than true stories?",
+      "options": ["They are written by experts", "They are more emotional and surprising", "They are shorter", "They are more accurate"],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "Paragraph three says false stories are more emotional and surprising."
+    },
+    {
+      "question": "What can be inferred about traditional editors and broadcasters?",
+      "options": [
+        "They are now more powerful",
+        "Their role has decreased",
+        "They mainly spread false news",
+        "They have all disappeared"
+      ],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "People can now report events without relying on them, so their role has lessened."
+    },
+    {
+      "question": "What does the passage suggest is a risk of fast information sharing?",
+      "options": [
+        "People always check information carefully",
+        "People often share information without verifying it",
+        "People trust only experts",
+        "People avoid social media"
+      ],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "The passage says people often share shocking headlines without checking if they are true."
+    },
+    {
+      "question": "Why has information spread become much faster today?",
+      "options": [
+        "Anyone can share information instantly online",
+        "Traditional media has disappeared",
+        "People read more news than before",
+        "Governments control information"
+      ],
+      "answer": 0,
+      "passage": "p2",
+      "explanation": "Social media platforms allow anyone with internet access to share content instantly."
+    },
+    {
+      "question": "Why have some schools added media literacy to their curriculum?",
+      "options": [
+        "Students requested it",
+        "Governments required it worldwide",
+        "People need skills to evaluate information",
+        "Social media companies demanded it"
+      ],
+      "answer": 2,
+      "passage": "p2",
+      "explanation": "Schools teach students how to evaluate sources and question information."
+    },
+    {
+      "question": "The writer’s attitude toward social media is best described as:",
+      "options": [
+        "completely negative",
+        "strongly supportive",
+        "uninterested",
+        "balanced, recognising both benefits and risks"
+      ],
+      "answer": 3,
+      "passage": "p2",
+      "explanation": "The writer notes benefits (instant sharing) and risks (false news)."
+    },
+    {
+      "question": "According to the passage, all of the following are true EXCEPT:",
+      "options": [
+        "False news can spread faster than true news",
+        "Social media allows people to share information instantly",
+        "News in the past moved slowly",
+        "Media literacy guarantees that all information is accurate"
+      ],
+      "answer": 3,
+      "passage": "p2",
+      "explanation": "The passage never claims media literacy guarantees accuracy."
+    },
+    {
+      "question": "What is the main message of the passage?",
+      "options": [
+        "Social media should be banned",
+        "Fast information sharing makes critical thinking more important",
+        "Traditional media is always better",
+        "Students should avoid the internet"
+      ],
+      "answer": 1,
+      "passage": "p2",
+      "explanation": "The passage concludes that people must learn to think carefully about information."
+    },
+    {
+      "question": "Which best summarises paragraph four?",
+      "options": [
+        "Schools are entertaining students with media lessons",
+        "Media literacy is only important for professional journalists",
+        "All countries require media literacy",
+        "Some schools now feel it is important to teach media literacy"
+      ],
+      "answer": 3,
+      "passage": "p2",
+      "explanation": "Paragraph four says schools in some countries now teach students to evaluate information."
+    },
+    {
+      "question": "In paragraph one, why does the writer say the noise of the world “seemed to fall away”?",
+      "options": [
+        "The place created a feeling of separation from everyday life",
+        "The mountains blocked outside sounds",
+        "The monastery was completely silent",
+        "The writer could not hear properly"
+      ],
+      "answer": 0,
+      "passage": "p3",
+      "explanation": "The phrase conveys a feeling of leaving ordinary life behind, not literal soundproofing."
+    },
+    {
+      "question": "What does the writer imply about the stones in paragraph two?",
+      "options": [
+        "They should be protected as historical objects",
+        "They show that places can outlast the people who built them",
+        "They are dangerous to visitors",
+        "They represent human failure"
+      ],
+      "answer": 1,
+      "passage": "p3",
+      "explanation": "The stones continued to exist long after the people were gone."
+    },
+    {
+      "question": "What can be inferred about the writer’s view of memory and history?",
+      "options": [
+        "They can be preserved in physical places without explanation",
+        "They must be written down to survive",
+        "They exist only in people’s minds",
+        "They are not important to understanding the past"
+      ],
+      "answer": 0,
+      "passage": "p3",
+      "explanation": "The monastery had no sign, yet “whatever was remembered there was remembered in stone.”"
+    },
+    {
+      "question": "“Encountered” (paragraph one) most nearly means:",
+      "options": ["built", "avoided", "experienced", "forgot"],
+      "answer": 2,
+      "passage": "p3",
+      "explanation": "The writer came across and experienced the silence."
+    },
+    {
+      "question": "“Indifferent” (paragraph two) most nearly means:",
+      "options": ["aggressive", "curious", "unchanged and unconcerned", "emotional"],
+      "answer": 2,
+      "passage": "p3",
+      "explanation": "The stones simply continued to exist without reacting to anything."
+    },
+    {
+      "question": "In “It suggested that something had once happened here,” “It” refers to:",
+      "options": ["philosophers", "the stones", "the ruins of the monastery", "the silence"],
+      "answer": 3,
+      "passage": "p3",
+      "explanation": "The preceding sentences describe how this silence “had weight.”"
+    },
+    {
+      "question": "How would you best describe the writer’s attitude?",
+      "options": [
+        "Critical and dismissive",
+        "Fearful and uncertain",
+        "Reflective and quietly moved",
+        "Bored and uninterested"
+      ],
+      "answer": 2,
+      "passage": "p3",
+      "explanation": "The tone is thoughtful and contemplative throughout."
+    },
+    {
+      "question": "What is the writer’s main idea about meaning in life in paragraph three?",
+      "options": [
+        "It depends on public recognition",
+        "It requires major achievements",
+        "It can come from small, quiet actions",
+        "It can only be understood through philosophy"
+      ],
+      "answer": 2,
+      "passage": "p3",
+      "explanation": "The writer suggests it may be enough to have been present and shaped a small corner of the world."
+    },
+    {
+      "question": "What is the main function of paragraph one?",
+      "options": [
+        "Give historical facts",
+        "Describe a personal experience that introduces the main idea",
+        "Argue for the preservation of old buildings",
+        "Explain location in detail"
+      ],
+      "answer": 1,
+      "passage": "p3",
+      "explanation": "The writer recounts a personal experience that leads into the reflection."
+    },
+    {
+      "question": "All are mentioned as sources of meaning EXCEPT:",
+      "options": ["love", "achievement", "contributing to something larger", "gaining wealth"],
+      "answer": 3,
+      "passage": "p3",
+      "explanation": "Paragraph three lists love, achievement and contribution, but not wealth."
+    },
+    {
+      "question": "What is the overall theme of the passage?",
+      "options": [
+        "Old buildings are more valuable than new ones",
+        "Historical places lose meaning without explanation",
+        "Quiet actions and presence can create lasting meaning",
+        "Silence is always a result of loss"
+      ],
+      "answer": 2,
+      "passage": "p3",
+      "explanation": "The essay concludes that simply being present and leaving a small mark can be meaningful."
+    },
+    {
+      "question": "Which is the best summary of the passage?",
+      "options": [
+        "A description of a monastery’s history",
+        "A reflection on quiet meaning in life",
+        "An explanation of silence in old places",
+        "An argument for preserving buildings"
+      ],
+      "answer": 1,
+      "passage": "p3",
+      "explanation": "The essay uses the monastery experience to reflect on meaning in life."
+    }
+  ]
+}

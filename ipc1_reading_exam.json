@@ -1,9 +1,9 @@
 {
   "title": "IPC 1 Entrance Examination Sample – Section A (Reading)",
   "description": "AY2027 sample reading section. Read each text and choose the best answer (A–D). 40 questions across three texts. (Section B: Writing is not included because it is not multiple choice.)",
-  "timeLimitMinutes": 60,
+  "timeLimitMinutes": 30,
   "shuffleQuestions": false,
-  "shuffleOptions": false,
+  "shuffleOptions": true,
   "showAnswersAtEnd": true,
   "passages": [
     {
@@ -25,70 +25,120 @@
   "questions": [
     {
       "question": "According to paragraph one, how much of the ocean floor has been seen by humans?",
-      "options": ["Less than ten percent", "About half", "More than seventy percent", "Almost all"],
+      "options": [
+        "Less than ten percent",
+        "About half",
+        "More than seventy percent",
+        "Almost all"
+      ],
       "answer": 0,
       "passage": "p1",
       "explanation": "More than ninety percent has never been seen, so less than ten percent has been seen."
     },
     {
       "question": "Which animal is described in detail in the passage?",
-      "options": ["Giant squid", "Sea cucumber", "Anglerfish", "Shark"],
+      "options": [
+        "Giant squid",
+        "Sea cucumber",
+        "Anglerfish",
+        "Shark"
+      ],
       "answer": 2,
       "passage": "p1",
       "explanation": "Paragraph two describes the anglerfish and how it hunts."
     },
     {
       "question": "What do scientists use to explore the deep ocean?",
-      "options": ["Satellites", "Submersibles", "Scuba equipment", "Fishing boats"],
+      "options": [
+        "Satellites",
+        "Submersibles",
+        "Scuba equipment",
+        "Fishing boats"
+      ],
       "answer": 1,
       "passage": "p1",
       "explanation": "Paragraph four names special underwater vehicles called submersibles."
     },
     {
       "question": "“Attracts” (paragraph two) most nearly means:",
-      "options": ["scares", "draws toward", "pushes away", "hides"],
+      "options": [
+        "scares",
+        "draws toward",
+        "pushes away",
+        "hides"
+      ],
       "answer": 1,
       "passage": "p1",
       "explanation": "The light brings smaller fish close, so “attracts” means draws toward."
     },
     {
       "question": "“Thrive” (paragraph three) most nearly means:",
-      "options": ["live and grow successfully", "disappear slowly", "struggle to survive", "move quickly"],
+      "options": [
+        "live and grow successfully",
+        "disappear slowly",
+        "struggle to survive",
+        "move quickly"
+      ],
       "answer": 0,
       "passage": "p1",
       "explanation": "“Despite this” signals that animals do well in spite of the pressure."
     },
     {
       "question": "In the sentence “when they swim close enough, the anglerfish snaps them up,” “they” refers to:",
-      "options": ["anglerfish", "the glowing organ", "smaller fish", "scientists"],
+      "options": [
+        "anglerfish",
+        "the glowing organ",
+        "smaller fish",
+        "scientists"
+      ],
       "answer": 2,
       "passage": "p1",
       "explanation": "The light attracts smaller fish, and it is those fish that swim close."
     },
     {
       "question": "In the sentence “many animals thrive there,” “there” refers to:",
-      "options": ["the ocean surface", "outer space", "inside a vehicle", "the deep ocean"],
+      "options": [
+        "the ocean surface",
+        "outer space",
+        "inside a vehicle",
+        "the deep ocean"
+      ],
       "answer": 3,
       "passage": "p1",
       "explanation": "The paragraph is about extreme pressure in the deep ocean."
     },
     {
       "question": "Why does the anglerfish use a glowing organ?",
-      "options": ["To help it see clearly", "To communicate with other fish", "To attract prey in the dark", "To protect itself from pressure"],
+      "options": [
+        "To help it see clearly",
+        "To communicate with other fish",
+        "To attract prey in the dark",
+        "To protect itself from pressure"
+      ],
       "answer": 2,
       "passage": "p1",
       "explanation": "The light attracts smaller fish, which the anglerfish then catches."
     },
     {
       "question": "What can be inferred about deep-sea exploration missions?",
-      "options": ["They are usually unsuccessful", "They often lead to new discoveries", "They are simple to carry out", "They focus only on known animals"],
+      "options": [
+        "They are usually unsuccessful",
+        "They often lead to new discoveries",
+        "They are simple to carry out",
+        "They focus only on known animals"
+      ],
       "answer": 1,
       "passage": "p1",
       "explanation": "Each mission provides new data and often leads to discoveries of unknown creatures."
     },
     {
       "question": "What is the main purpose of this passage?",
-      "options": ["To warn about dangers in the ocean", "To tell a fictional story about sea creatures", "To explain how to become a scientist", "To inform readers about the deep sea"],
+      "options": [
+        "To warn about dangers in the ocean",
+        "To tell a fictional story about sea creatures",
+        "To explain how to become a scientist",
+        "To inform readers about the deep sea"
+      ],
       "answer": 3,
       "passage": "p1",
       "explanation": "The passage presents factual information about the deep sea."
@@ -131,7 +181,12 @@
     },
     {
       "question": "According to paragraph one, how long could news take to travel in the past?",
-      "options": ["A few hours", "A few days", "Weeks or months", "Several years"],
+      "options": [
+        "A few hours",
+        "A few days",
+        "Weeks or months",
+        "Several years"
+      ],
       "answer": 2,
       "passage": "p2",
       "explanation": "A battle might take weeks or months to be known elsewhere."
@@ -150,35 +205,60 @@
     },
     {
       "question": "“This” in “This spread of information to ordinary people…” refers to:",
-      "options": ["traditional media", "social media platforms", "fast internet speed", "government control"],
+      "options": [
+        "traditional media",
+        "social media platforms",
+        "fast internet speed",
+        "government control"
+      ],
       "answer": 1,
       "passage": "p2",
       "explanation": "The preceding sentences describe social media platforms letting anyone share content."
     },
     {
       "question": "“Accuracy” (paragraph three) most nearly means:",
-      "options": ["speed", "correctness", "popularity", "importance"],
+      "options": [
+        "speed",
+        "correctness",
+        "popularity",
+        "importance"
+      ],
       "answer": 1,
       "passage": "p2",
       "explanation": "“Speed does not always mean accuracy” contrasts speed with being correct."
     },
     {
       "question": "“Surprising” (paragraph three) most nearly means:",
-      "options": ["unexpected", "predictable", "boring", "slow"],
+      "options": [
+        "unexpected",
+        "predictable",
+        "boring",
+        "slow"
+      ],
       "answer": 0,
       "passage": "p2",
       "explanation": "Surprising things are unexpected."
     },
     {
       "question": "In “think about it carefully,” “it” refers to:",
-      "options": ["the curriculum", "media literacy", "the school system", "the information"],
+      "options": [
+        "the curriculum",
+        "media literacy",
+        "the school system",
+        "the information"
+      ],
       "answer": 3,
       "passage": "p2",
       "explanation": "The sentence is about receiving information and learning to think about that information."
     },
     {
       "question": "Why do false stories often spread faster than true stories?",
-      "options": ["They are written by experts", "They are more emotional and surprising", "They are shorter", "They are more accurate"],
+      "options": [
+        "They are written by experts",
+        "They are more emotional and surprising",
+        "They are shorter",
+        "They are more accurate"
+      ],
       "answer": 1,
       "passage": "p2",
       "explanation": "Paragraph three says false stories are more emotional and surprising."
@@ -317,21 +397,36 @@
     },
     {
       "question": "“Encountered” (paragraph one) most nearly means:",
-      "options": ["built", "avoided", "experienced", "forgot"],
+      "options": [
+        "built",
+        "avoided",
+        "experienced",
+        "forgot"
+      ],
       "answer": 2,
       "passage": "p3",
       "explanation": "The writer came across and experienced the silence."
     },
     {
       "question": "“Indifferent” (paragraph two) most nearly means:",
-      "options": ["aggressive", "curious", "unchanged and unconcerned", "emotional"],
+      "options": [
+        "aggressive",
+        "curious",
+        "unchanged and unconcerned",
+        "emotional"
+      ],
       "answer": 2,
       "passage": "p3",
       "explanation": "The stones simply continued to exist without reacting to anything."
     },
     {
       "question": "In “It suggested that something had once happened here,” “It” refers to:",
-      "options": ["philosophers", "the stones", "the ruins of the monastery", "the silence"],
+      "options": [
+        "philosophers",
+        "the stones",
+        "the ruins of the monastery",
+        "the silence"
+      ],
       "answer": 3,
       "passage": "p3",
       "explanation": "The preceding sentences describe how this silence “had weight.”"
@@ -374,7 +469,12 @@
     },
     {
       "question": "All are mentioned as sources of meaning EXCEPT:",
-      "options": ["love", "achievement", "contributing to something larger", "gaining wealth"],
+      "options": [
+        "love",
+        "achievement",
+        "contributing to something larger",
+        "gaining wealth"
+      ],
       "answer": 3,
       "passage": "p3",
       "explanation": "Paragraph three lists love, achievement and contribution, but not wealth."
